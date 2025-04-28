@@ -95,11 +95,11 @@
 	
 	<distributionManagement>
 	
-	    <repository>
+	   <!-- <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
 	      <url>http://3.210.205.26:8081/repository/jio-release/</url>
-	    </repository>
+	    </repository> -->
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
