@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to KK AWS New Batch On 25th May </h1>
+<h1 align="center">Welcome to KK AWS New Batch On 25th May at 06:45AM</h1>
 <h1 align="center"> KK FUNDA AWS & SRE </h1>
 <hr>
 <br>
