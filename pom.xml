@@ -94,19 +94,19 @@
 	</dependencies>
 	
 	<distributionManagement>
-	
+	<!--
 	   <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
 	      <url>http://3.89.116.28:8081/repository/jio-release/</url>
-	    </repository>
+	    </repository> 
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Snapshot Nexus Repository </name>
 	      <url>http://3.89.116.28:8081/repository/jio-snapshot/</url>
 	    </snapshotRepository>
-	    
+	    -->
 	</distributionManagement>
 	
 	<build>
