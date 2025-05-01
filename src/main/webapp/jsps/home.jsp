@@ -8,6 +8,26 @@
     <link href="images/kkfunda.jpg" rel="icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .main-header {
+            color: #004d40;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+        .devops-tools li {
+            background-color: #ffffff;
+        }
+        .table th {
+            background-color: #00796b;
+            color: white;
+        }
+        .footer {
+            background-color: #004d40;
+        }
+    </style>
 </head>
 <body>
 
@@ -26,15 +46,18 @@
 </nav>
 
 <div class="container mt-4">
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="color: darkgreen; font-size: 24px; font-weight: bold;">
+        Welcome to KK AWS - DevOps Training and Services Platform
+    </marquee>
+
     <div class="text-center">
-        <h1>Welcome to KK AWS</h1>
-        <h2>KK FUNDA</h2>
+        <h1 class="main-header">KK FUNDA</h1>
         <hr>
     </div>
 
     <!-- Server & Client Details -->
     <div class="mt-4">
-        <h4>Server & Client Information</h4>
+        <h4 style="color: #00695c;">Server & Client Information</h4>
         <table class="table table-bordered table-striped">
             <tbody>
             <%
@@ -52,48 +75,18 @@
 
     <!-- DevOps Tools Section -->
     <div class="container mt-5">
-        <h3 class="text-center mb-4">Top DevOps Tools</h3>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <strong>1. Git</strong> – A distributed version control system.<br>
-                Git helps developers collaborate and track changes in source code during software development.
-            </li>
-            <li class="list-group-item">
-                <strong>2. Jenkins</strong> – An automation server for CI/CD.<br>
-                Jenkins allows you to automate building, testing, and deploying applications.
-            </li>
-            <li class="list-group-item">
-                <strong>3. Docker</strong> – Containerization platform.<br>
-                Docker packages applications with dependencies into containers for easy deployment.
-            </li>
-            <li class="list-group-item">
-                <strong>4. Kubernetes</strong> – Container orchestration system.<br>
-                Kubernetes automates container deployment, scaling, and management.
-            </li>
-            <li class="list-group-item">
-                <strong>5. Ansible</strong> – Configuration management tool.<br>
-                Ansible automates IT processes such as configuration, provisioning, and application deployment.
-            </li>
-            <li class="list-group-item">
-                <strong>6. Terraform</strong> – Infrastructure as Code (IaC) tool.<br>
-                Terraform enables users to define and provision infrastructure using a declarative configuration language.
-            </li>
-            <li class="list-group-item">
-                <strong>7. Prometheus</strong> – Monitoring and alerting toolkit.<br>
-                Prometheus collects and stores metrics data and provides powerful querying and alerting features.
-            </li>
-            <li class="list-group-item">
-                <strong>8. Grafana</strong> – Visualization and dashboard tool.<br>
-                Grafana integrates with data sources like Prometheus to create interactive dashboards.
-            </li>
-            <li class="list-group-item">
-                <strong>9. ELK Stack (Elasticsearch, Logstash, Kibana)</strong> – Log analysis stack.<br>
-                ELK Stack helps in collecting, analyzing, and visualizing logs in real time.
-            </li>
-            <li class="list-group-item">
-                <strong>10. AWS CloudFormation</strong> – IaC service on AWS.<br>
-                CloudFormation helps you model and provision AWS infrastructure using JSON/YAML templates.
-            </li>
+        <h3 class="text-center mb-4" style="color: #004d40;">Top DevOps Tools</h3>
+        <ul class="list-group devops-tools">
+            <li class="list-group-item"><strong>1. Git</strong> – A distributed version control system.<br>Git helps developers collaborate and track changes in source code.</li>
+            <li class="list-group-item"><strong>2. Jenkins</strong> – An automation server for CI/CD.<br>Jenkins automates build, test, and deployment workflows.</li>
+            <li class="list-group-item"><strong>3. Docker</strong> – Containerization platform.<br>Docker packages applications with dependencies for consistent environments.</li>
+            <li class="list-group-item"><strong>4. Kubernetes</strong> – Container orchestration system.<br>Kubernetes automates deployment, scaling, and operations of containers.</li>
+            <li class="list-group-item"><strong>5. Ansible</strong> – Configuration management tool.<br>Ansible simplifies automation of cloud provisioning and app deployment.</li>
+            <li class="list-group-item"><strong>6. Terraform</strong> – Infrastructure as Code (IaC) tool.<br>Terraform enables reproducible infrastructure using declarative configs.</li>
+            <li class="list-group-item"><strong>7. Prometheus</strong> – Monitoring and alerting toolkit.<br>Prometheus collects metrics and provides query-based alerting.</li>
+            <li class="list-group-item"><strong>8. Grafana</strong> – Visualization and dashboard tool.<br>Grafana visualizes monitoring data with real-time dashboards.</li>
+            <li class="list-group-item"><strong>9. ELK Stack</strong> – Log management solution.<br>Elasticsearch, Logstash, and Kibana help collect and visualize logs.</li>
+            <li class="list-group-item"><strong>10. AWS CloudFormation</strong> – AWS Infrastructure as Code.<br>CloudFormation provisions AWS resources using JSON or YAML templates.</li>
         </ul>
     </div>
 
@@ -115,7 +108,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center p-3 mt-5">
+<footer class="footer text-white text-center p-3 mt-5">
     KK FUNDA Training & Development Center<br>
     <small>&copy; 2024 by <a href="https://google.com" class="text-info">KK FUNDA</a></small>
 </footer>
