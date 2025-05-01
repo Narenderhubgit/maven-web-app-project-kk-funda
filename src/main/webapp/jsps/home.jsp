@@ -109,7 +109,7 @@
 
 <!-- Footer -->
 <footer class="footer text-white text-center p-3 mt-5">
-    KK FUNDA Training & Development Center<br>
+    KK FUNDA Training & Development Center Bangalore<br>
     <small>&copy; 2024 by <a href="https://google.com" class="text-info">KK FUNDA</a></small>
 </footer>
 
