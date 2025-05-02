@@ -47,7 +47,7 @@
 
 <div class="container mt-4">
     <marquee behavior="scroll" direction="left" scrollamount="6" style="color: darkgreen; font-size: 24px; font-weight: bold;">
-        Welcome to KK AWS - DevOps Training and Services Platform
+        Welcome to KK AWS - DevOps Training and Services Platform Hello
     </marquee>
 
     <div class="text-center">
