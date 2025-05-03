@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+ne<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.net.*" %>
 <!DOCTYPE html>
 <html>
@@ -47,7 +47,7 @@
 
 <div class="container mt-4">
     <marquee behavior="scroll" direction="left" scrollamount="6" style="color: darkgreen; font-size: 24px; font-weight: bold;">
-        Welcome to KK AWS - DevOps Training and Services Platform Hello
+        Welcome to KK AWS - DevOps Training and Services Platform Hello everyone
     </marquee>
 
     <div class="text-center">
