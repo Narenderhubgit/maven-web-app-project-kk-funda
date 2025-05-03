@@ -94,7 +94,6 @@
 	</dependencies>
 	
 	<distributionManagement>
-	<!--
 	   <repository>
 	      <id>nexus</id>
 	      <name>KK FUNDA Releases Nexus Repository</name>
@@ -107,7 +106,6 @@
 	      <url>http://3.237.205.135:8081/repository/jio-snapshot/:wq!
 	</url>
 	    </snapshotRepository>
-	    -->
 	</distributionManagement>
 	
 	<build>
