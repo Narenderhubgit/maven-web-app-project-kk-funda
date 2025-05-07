@@ -1,23 +1,59 @@
-pipeline {
+pipeline 
+{
     agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building...'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-            }
-        }
+    tools 
+    {
+        maven "maven-3.9.9"
     }
+    stages
+    {
+        stage('git checkout')
+        {
+            steps
+            {
+            git branch: 'master', credentialsId: '39dff5bc-4359-42a7-9cab-bc6cb9ab0abb', url: 'https://github.com/Narenderhubgit/maven-web-app-project-kk-funda.git'
+            }
+         }
+        stage('compile')
+        {
+            steps
+            {
+             sh "mvn clean compile"
+            }
+        }
+        stage('build')
+        {
+           steps
+            {
+             sh "mvn clean package"
+            }
+        }
+        stage('SQ report')
+        {
+           steps
+            {
+             sh "mvn clean sonar:sonar"
+            }
+        }
+        stage('deploy')
+        {
+           steps
+            {
+            sh "mvn clean deploy"
+            }
+        }
+        stage('Deploy App')
+        {
+          steps
+           {
+         echo "Deploying WAR file using curl..."
+
+        sh """
+            curl -u admin:tomcat@123 \
+            --upload-file /var/lib/jenkins/workspace/jio-delclarative-PL/target/maven-web-application.war \
+            "http://44.223.28.39:8080/manager/text/deploy?path=/maven-web-application&update=true"
+        """
+        }
+      }
+     }
 }
