@@ -47,7 +47,7 @@ ne<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="
 
 <div class="container mt-4">
     <marquee behavior="scroll" direction="left" scrollamount="6" style="color: darkgreen; font-size: 24px; font-weight: bold;">
-        Welcome to KK AWS - DevOps Training and Services Platform Hello everyone join kk funda
+        Welcome to KK AWS - DevOps Training and Services Platform Hello everyone
     </marquee>
 
     <div class="text-center">
