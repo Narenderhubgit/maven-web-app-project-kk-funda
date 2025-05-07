@@ -47,9 +47,8 @@ pipeline
           steps
            {
          echo "Deploying WAR file using curl..."
-
-        sh "cp /var/lib/jenkins/workspace/jio-delclarative-PL/target/maven-web-application.war /opt/tomcat/webapps/"
-        }
-      }
+        sh "cp /var/lib/jenkins/workspace/jio-delclarative-PL/target/maven-web-application.war /opt/tomcat/webapps/ "
+           }
+       }
      }
 }
