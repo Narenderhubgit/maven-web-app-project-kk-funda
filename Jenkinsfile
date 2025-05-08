@@ -3,7 +3,7 @@ pipeline
     agent any
     environment {
         SLACK_CHANNEL = '#all-devops-new'         // Replace with your Slack channel
-        SLACK_CREDENTIAL_ID = 'Ru3O8Ji6wiapfN3bRIubdFVL'     // Set your Slack credential ID
+        SLACK_CREDENTIAL_ID = 'slack credentials'     // Set your Slack credential ID
     tools 
     {
         maven "maven-3.9.9"
