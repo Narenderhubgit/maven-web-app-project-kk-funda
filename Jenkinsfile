@@ -51,7 +51,7 @@ pipeline
         sh """
             curl -u admin:tomcat@123 \
             --upload-file /var/lib/jenkins/workspace/jio-delclarative-PL/target/maven-web-application.war \
-            "http://44.223.28.39:8080/manager/text/deploy?path=/maven-web-application&update=true"
+            "http://3.91.82.216:8080/manager/text/deploy?path=/maven-web-application&update=true"
         """
         }
       }
