@@ -48,7 +48,7 @@
 <div class="container mt-4">
     <!-- Replaced marquee with non-scrolling styled div -->
     <div style="color: darkgreen; font-size: 24px; font-weight: bold; text-align: center;">
-        Welcome to KK AWS - DevOps Training and Services Platform Hello everyone hai how r u
+        Welcome to KK AWS - DevOps Training and Services Platform Hello everyone master
     </div>
 
     <div class="text-center">
