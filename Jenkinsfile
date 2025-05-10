@@ -46,7 +46,7 @@ pipeline {
             }
         }
 
-        stage('SQ report') {
+      /*  stage('SQ report') {
             steps {
                 sh 'mvn sonar:sonar'
             }
@@ -67,6 +67,7 @@ pipeline {
                     "http://3.91.82.216:8080/manager/text/deploy?path=/maven-web-application&update=true"
                 """
             }
+            */
         }
     }
 
