@@ -46,7 +46,7 @@ pipeline {
             }
         }
 
-        stage('SQ report') {
+       /* stage('SQ report') {
             steps {
                 sh 'mvn sonar:sonar'
             }
@@ -57,15 +57,10 @@ pipeline {
                 sh 'mvn deploy'
             }
         }
-
+*/
         stage('Deploy App') {
             steps {
-                echo "Deploying WAR file using curl..."
-                sh """
-                    curl -u admin:tomcat@123 \
-                    --upload-file target/maven-web-application.war \
-                    "http://3.91.82.216:8080/manager/text/deploy?path=/maven-web-application&update=true"
-                """
+        deploy adapters: [tomcat9(credentialsId: '0feccf17-622d-4bc2-a55a-e90912e04465', path: '', url: 'http://3.208.89.199:8080/')], contextPath: null, war: '**/maven-web-application.war'
             }
         }
     }
