@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    environment {
+   /* environment {
         SLACK_CHANNEL = 'all-devops-new'
         SLACK_CREDENTIAL_ID = 'slack3 credentials'  // Avoid spaces if possible
-    }
+    } */
     tools {
         maven "maven-3.9.9"
     }
