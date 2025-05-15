@@ -132,6 +132,12 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.4.0</version> <!-- ✅ updated -->
+</plugin>
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
